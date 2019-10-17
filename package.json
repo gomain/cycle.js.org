@@ -24,14 +24,20 @@
     "url": "https://github.com/gomain/npm-emacs-scaffolding"
   },
   "homepage": "https://github.com/gomain/npm-emacs-scaffolding#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@cycle/dom": "^22.4.0",
+    "@cycle/http": "^15.2.0",
+    "@cycle/isolate": "^5.1.0",
+    "@cycle/run": "^5.3.0",
+    "mathjs": "^6.2.3"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/plugin-proposal-function-bind": "^7.2.0",
     "@babel/plugin-proposal-partial-application": "^7.4.4",
     "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "11.0.0-beta.0",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-babel": "^5.3.0",
@@ -59,6 +65,14 @@
       "quotes": [
         "warn",
         "single"
+      ],
+      "indent": [
+        "error",
+        2,
+        {
+          "FunctionExpression": { "parameters": "off", "body": 1 },
+          "MemberExpression": 1
+        }
       ]
     }
   },
